@@ -71,7 +71,7 @@ html{
 }
 #home::before{
     content: "";
-    background: url("../bg-pic.jpg")no-repeat center center/cover ;
+    background: url("../images/bg-pic.jpg")no-repeat center center/cover ;
     position: absolute;
     width: 100%;
     z-index: -1;
@@ -171,7 +171,7 @@ html{
 #services-container::before{
     content: "";
     position: absolute;
-    background: url('../db.jpg') repeat;
+    background: url('../images/db.jpg') repeat;
     width: 100%;
     height: 1800px;
     z-index: -1;
