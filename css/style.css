@@ -1,0 +1,183 @@
+*{
+margin: 0;
+padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    display: flex; 
+    align-items: center;
+    position: sticky;
+    font-family: 'Amatic SC', cursive;
+    top:0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* top: 0px; */
+    /* bottom: 0px; */
+    opacity: .60;
+}
+
+#logo{
+    margin: 19px 14px;
+    max-width: max-content;
+}
+
+#logo img{
+    width: 100px;
+    height: auto;
+    /* margin: 0px 20px; */
+    border-radius: 20px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.4 rem;
+}
+
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 3px 40px;
+    border-radius: 20px;
+    color:white;
+    font-size: 2rem;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color:white;
+}
+
+#home{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height:545px;   
+}
+#home::before{
+    content: "";
+    background: url("../bg-pic.jpg")no-repeat center center/cover ;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    /* opacity: .80;    */
+    background-color: rgba(0, 0, 0, .4);
+    height: 642px;
+    top:0px;
+    left:0px;
+}
+#services-container h1{
+    font: 200;
+}
+.h-primary{
+    padding: 40px;
+    text-shadow: 2px 2px 8px #000000;
+}
+.h-primary:hover{
+    background-color: rgba(123, 123, 199, 0.8);
+    border-radius: 20px;
+    cursor: pointer;
+}
+#home p{
+    padding: 20px;
+}
+#home p:hover{
+    background-color: rgba(234, 234, 239, 0.647);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.h-primary2{
+    padding: 40px;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+#home h1{
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
+#home p{
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: 'Caveat', cursive;
+    color: black;
+    text-align: center;
+}
+
+#services{
+    padding: 12px;
+    margin: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+.h-secondary{
+    padding: 40px;
+    font-size: 2.2rem;
+    font-family: 'Amatic SC', cursive;
+    text-decoration: underline;
+}
+#services{
+    margin: 40px 34px;
+    display: flex;
+}
+#services .box{ 
+    flex-basis: 25%;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    margin: 20px 18px;
+    border-radius: 28px;
+    background: #ffffff;
+    margin-bottom: 20px;
+}
+#services .box:hover{ 
+    background: #000000;
+    color: white;
+ 
+}
+#services .box img{ 
+    height: 330px;
+    margin: auto;
+    display: block;
+ }
+ #services .box p{
+    font-family: 'Caveat', cursive;
+    
+ }
+ 
+ 
+.center{
+    text-align: center;
+}
+
+#services-container::before{
+    content: "";
+    position: absolute;
+    background: url('../db.jpg') repeat;
+    width: 100%;
+    height: 1800px;
+    z-index: -1;
+    opacity: .30;
+}
+
+.box img{
+    border-radius: 20px;
+}
